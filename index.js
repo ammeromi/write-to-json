@@ -15,7 +15,7 @@ const toJson = (rawJson) => {
   const fileName = 'posts.json';
   const writePath = `${writeDir}/${fileName}`;
 
-  const makeFile = async () => {
+  const makeFile = () => {
     const isExists = fs.existsSync(writeDir);
     if (!isExists){
       fs.mkdir(writeDir, { recursive: true }, (err) => {
